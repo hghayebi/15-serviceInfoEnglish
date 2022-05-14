@@ -1,0 +1,114 @@
+@media (max-width: 640px) {
+  .ho-sub-heading {
+    display: none;
+  }
+  //
+  .ho-sub-service {
+    margin: 5px 15px;
+    flex-direction: column;
+    // justify-content: space-between;
+    align-items: stretch;
+
+    & > *:not(:last-child) {
+      border-left: 0;
+    }
+    & > *:not(:first-child) {
+      // display: none;
+    }
+
+    background-image: inherit;
+
+    &__name--container {
+      display: flex;
+      gap: 10px;
+      // justify-content: center;
+
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+    &__name--container {
+      transition: all 0.8s ease-out;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        #12b886 50%
+      );
+      background-size: 240%;
+      &:hover {
+        color: #fff;
+        background-position: 100%;
+      }
+    }
+
+    &__code--container {
+      &::before {
+        content: "کد خدمت: ";
+        display: block;
+        flex: 1;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      // gap: 20px;
+
+      & > * {
+        flex: 1;
+      }
+    }
+
+    &__link--container {
+      &::before {
+        content: "لینک دریافت خدمت: ";
+        display: inline-block;
+        flex: 1;
+      }
+      display: flex;
+      align-items: center;
+      // gap: 20px;
+      justify-content: space-around;
+
+      & > * {
+        flex: 1;
+      }
+
+      &:hover {
+        background-color: inherit;
+        margin: 0;
+        padding: 10px 0;
+      }
+    }
+
+    &__details--link--container {
+      &::before {
+        content: "جزئیات خدمت: ";
+        display: block;
+        flex: 1;
+      }
+      display: flex;
+      align-items: center;
+      // gap: 20px;
+      justify-content: space-around;
+
+      & > * {
+        flex: 1;
+      }
+
+      &:hover {
+        background-color: inherit;
+        margin: 0;
+        padding: 10px 0;
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.ho-sub-service--main-color {
+  background-color: #12b886;
+  color: white;
+}

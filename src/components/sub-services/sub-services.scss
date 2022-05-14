@@ -1,0 +1,152 @@
+.ho-sub-services {
+  // & > *:nth-child(odd) {
+  //   background-color: #f7f7f7;
+  // }
+  // margin-bottom: 10px;
+}
+
+.ho-sub-service {
+  & > * {
+    // padding: 10px 0;
+    margin: 10px 0;
+  }
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #bbb;
+  border-radius: 5px;
+
+  margin: 5px 5px;
+  transition: all 0.8s ease-out;
+
+  @media (min-width: 641px) {
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      #12b886 50%
+    );
+    background-size: 240%;
+    &:hover {
+      color: #fff;
+      background-position: 100%;
+    }
+  }
+
+  & > * {
+    text-align: center;
+    font-size: 13px;
+  }
+  & > *:not(:last-child) {
+    border-right: 1px solid #bbb;
+  }
+
+  &__name {
+    // text-align: center;
+    // flex: 4;
+    // padding: 0 40px;
+    margin: 0;
+  }
+  &__name--container {
+    // margin: 5px 30px;
+    text-align: center;
+    flex: 4;
+  }
+
+  &__code--container {
+    text-align: center;
+    flex: 1;
+  }
+
+  &__code {
+    margin: 0;
+  }
+
+  &__link--container {
+    text-align: center;
+    flex: 1;
+    & img {
+      width: 24px;
+      height: 24px;
+    }
+    transition: all 0.3s;
+    &:hover {
+      background-color: white;
+      margin: 0;
+      padding: 10px 0;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+
+    transition: all 0.3s;
+    &:hover,
+    &:active {
+      // display: inline-block;
+
+      & img {
+        transform: scale(1.2);
+      }
+      transform: translateY(-3px);
+    }
+  }
+
+  &__details--link--container {
+    flex: 1;
+
+    & img {
+      width: 24px;
+      height: 24px;
+    }
+    transition: all 0.3s;
+    &:hover {
+      background-color: white;
+      margin: 0;
+      padding: 10px 0;
+    }
+  }
+
+  &__details--link {
+    &:link,
+    &:visited {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+    transition: all 0.3s;
+    &:hover,
+    &:active {
+      // display: inline-block;
+
+      & img {
+        transform: scale(1.2);
+      }
+      transform: translateY(-3px);
+    }
+  }
+
+  &--heading {
+    font-weight: bold;
+    color: #10375d;
+    font-size: 13px;
+    margin: 0;
+  }
+}
+
+.collapsible {
+  overflow: hidden;
+  transition: all 0.7s ease-in-out;
+  height: auto;
+}
+
+.collapsible.collapsed {
+  height: 0;
+}

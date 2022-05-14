@@ -1,0 +1,11 @@
+@media (max-width: 640px) {
+  .ho-tavanir-logo {
+    display: none;
+  }
+
+  .ho-ionicon {
+    & * {
+      width: 22px;
+    }
+  }
+}

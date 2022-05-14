@@ -1,0 +1,38 @@
+.ho-main-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // direction: rtl;
+  direction: ltr;
+
+  font-size: 13px;
+  font-family: sans-serif;
+  max-width: 1170px;
+  margin: 10px auto;
+}
+.ho-h2-container {
+  text-align: center;
+}
+
+.ho-h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  // margin-bottom: 30px;
+  font-family: sans-serif;
+
+  border-bottom: 1px solid #10375d;
+  display: inline-block;
+
+  color: #10375d;
+}
+
+.ho-service-container {
+  margin-bottom: 5px;
+
+  // border: 10px solid red;
+
+  box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.2);
+  // padding: 0 10px;
+  // border-radius: 50px;
+}
