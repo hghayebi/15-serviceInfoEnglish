@@ -40,3 +40,5 @@ Object.entries(data).forEach((obj) => {
 
   // console.log(obj);
 });
+
+// document.querySelector(".form2name").style.textAlign = "left";

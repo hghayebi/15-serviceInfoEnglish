@@ -19,7 +19,7 @@ const objPropertys = data[0].split(",").map((x) => x.trim());
 // Create an empty object
 const obj = new Object();
 
-data.slice(1, -1).forEach((line) => {
+data.slice(1).forEach((line) => {
   let data2 = line.split(",").map((x) => x.trim());
   let data2Name = data2[0];
 
