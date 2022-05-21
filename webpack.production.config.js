@@ -13,7 +13,7 @@ module.exports = {
     clean: true,
   },
   mode: "production",
-  devtool: "eval-source-map",
+  // devtool: "eval-source-map",
 
   module: {
     rules: [

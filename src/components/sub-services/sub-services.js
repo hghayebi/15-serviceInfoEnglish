@@ -124,6 +124,7 @@ export default class SubServices {
       let subserviceDetailsLink = document.createElement("a");
       subserviceDetailsLink.classList.add("ho-sub-service__details--link");
       subserviceDetailsLink.href = obj.serviceDetailsLink || "#";
+      subserviceDetailsLink.target = "_blank";
       subserviceDetailsLink.appendChild(subserviceDetailsLinkIcon);
       subserviceDetailsLinkDiv.appendChild(subserviceDetailsLink);
 

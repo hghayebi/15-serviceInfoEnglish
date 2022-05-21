@@ -1,7 +1,4 @@
-const {
-  default: MainService,
-} = require("./components/main-service/main-service");
-
+import MainService from "./components/main-service/main-service";
 import SubServices from "./components/sub-services/sub-services";
 import data from "./data/modifiedData.json";
 
